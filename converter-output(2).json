@@ -1,0 +1,104 @@
+{
+	"monster": [
+		{
+			"name": "Goblin Ranger",
+			"source": "",
+			"page": 0,
+			"size": "S",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"goblinoid"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item studded leather armor|PHB|studded leather}"
+					]
+				}
+			],
+			"hp": {
+				"average": 13,
+				"formula": "3d6 + 3"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 8,
+			"dex": 16,
+			"con": 12,
+			"int": 10,
+			"wis": 10,
+			"cha": 8,
+			"save": {
+				"dex": "+5"
+			},
+			"skill": {
+				"animal handling": "+2",
+				"acrobatics": "+5",
+				"survival": "+2"
+			},
+			"senses": [
+				"darkvision 60ft."
+			],
+			"passive": 10,
+			"languages": [
+				"Common",
+				"Goblin"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Expert Hunter",
+					"entries": [
+						"The goblin ranger has advantage on Wisdom (Survival) checks to follow tracks"
+					]
+				},
+				{
+					"name": "Nimble Escape",
+					"entries": [
+						"The goblin ranger can take the Disengage or Hide action as a bonus action on each of its turns."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Shortbow",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 80/320 ft., one creature. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Scimitar",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage.",
+						"Description",
+						"Some of the most promising goblins are trained to lead hunting parties. They are able to track their targets and set up devastating surprise attacks, making sure to always have the upper hand and to always fight with the best odds.",
+						"They usally tame one or more Worgs to help them in finding and getting their prey."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"GO"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			]
+		}
+	]
+}
