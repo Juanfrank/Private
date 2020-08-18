@@ -1,5 +1,241 @@
 {
 	"monster": [
+	{
+	"name": "Corrupt Druid",
+	"source": "",
+	"page": 0,
+	"size": "M",
+	"type": "human",
+	"alignment": [
+		"N",
+		"E"
+	],
+	"ac": [
+		11
+	],
+	"hp": {
+		"average": 45,
+		"formula": "7d8 + 14"
+	},
+	"speed": {
+		"walk": 30
+	},
+	"str": 11,
+	"dex": 13,
+	"con": 14,
+	"int": 13,
+	"wis": 16,
+	"cha": 12,
+	"save": {
+		"int": "+3",
+		"wis": "+5"
+	},
+	"skill": {
+		"medicine": "+5",
+		"nature": "+3",
+		"perception": "+5"
+	},
+	"passive": 15,
+	"languages": [
+		"Common",
+		"Druidic"
+	],
+	"cr": "3",
+	"spellcasting": [
+		{
+			"name": "Spellcasting",
+			"headerEntries": [
+				"The Corrupt Druid is a 5th-level spellcaster. The Druid's spellcasting ability is Wisdom (spell save {@dc 11}, {@hit 3} to hit with spell attacks). They require no material components to cast their spells. The Corrupt Druid has the following druid spells prepared:"
+			],
+			"spells": {
+				"0": {
+					"spells": [
+						"{@spell produce flame}",
+						"{@spell thorn whip}",
+						"{@spell shillelagh}"
+					]
+				},
+				"1": {
+					"slots": 4,
+					"spells": [
+						"{@spell charm person}",
+						"{@spell cure wounds}",
+						"{@spell faerie fire}",
+						"{@spell thunderwave}"
+					]
+				},
+				"2": {
+					"slots": 3,
+					"spells": [
+						"{@spell animal messenger}",
+						"{@spell barkskin}*"
+					]
+				},
+				"3": {
+					"slots": 2,
+					"spells": [
+						"{@spell plant growth}",
+						"{@spell protection from energy}"
+					]
+				}
+			},
+			"footerEntries": [
+				"Will cast <b>barkskin</b> on themselves before combat."
+			],
+			"ability": "wis"
+		}
+	],
+	"action": [
+		{
+			"name": "Quarterstaff",
+			"entries": [
+				"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6}) bludgeoning damage, or 4 ({@damage 1d8}) bludgeoning damage if used with two hands to make a melee attack."
+			]
+		},
+		{
+			"name": "Quarterstaff (Shillelagh)",
+			"entries": [
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. *Hit:*4 ({@damage 1d8}) bludgeoning damage."
+			]
+		}
+	],
+	"languageTags": [
+		"C",
+		"DU"
+	],
+	"damageTags": [
+		"B"
+	],
+	"spellcastingTags": [
+		"CD"
+	],
+	"miscTags": [
+		"MW"
+	],
+	"conditionInflictSpell": [
+		"charmed"
+	]
+},
+
+	{
+	"name": "Evil Nature Spirit",
+	"source": "",
+	"page": 0,
+	"size": "L",
+	"type": "fey",
+	"alignment": [
+		"N",
+		"E"
+	],
+	"ac": [
+		{
+			"ac": 15,
+			"from": [
+				"natural armor"
+			]
+		}
+	],
+	"hp": {
+		"average": 75,
+		"formula": "10d10 + 20"
+	},
+	"speed": {
+		"walk": 30
+	},
+	"str": 17,
+	"dex": 16,
+	"con": 14,
+	"int": 12,
+	"wis": 17,
+	"cha": 18,
+	"skill": {
+		"perception": "+5"
+	},
+	"senses": [
+		"darkvision (60 ft.)"
+	],
+	"passive": 15,
+	"resist": [
+		"bludgeoning",
+		"piercing"
+	],
+	"vulnerable": [
+		"fire"
+	],
+	"conditionImmune": [
+		"charmed",
+		"frightened",
+		"poisoned"
+	],
+	"languages": [
+		"Common",
+		"Sylvan"
+	],
+	"cr": "4",
+	"trait": [
+		{
+			"name": "Entangling Aura",
+			"entries": [
+				"The ground in a 5-foot radius around the Evil Nature Spirit is a mass of grasping vines and weeds. Hostile creatures treat this area as difficult terrain."
+			]
+		},
+		{
+			"name": "Immutable Form",
+			"entries": [
+				"Evil Nature Spirit is immune to any spell or effect that would alter its form."
+			]
+		},
+		{
+			"name": "Regeneration",
+			"entries": [
+				"Evil Nature Spirit regains 10 hit points at the start of its turn. If it takes slashing damage, this trait doesn't function at the start of its next turn. Evil Nature Spirit dies only if it starts its turn with 0 hit points and doesn't regenerate."
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Multiattack",
+			"entries": [
+				"The Evil Nature Spirit makes two slam attacks."
+			]
+		},
+		{
+			"name": "Slam",
+			"entries": [
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) bludgeoning damage."
+			]
+		},
+		{
+			"name": "Gale {@recharge 5}",
+			"entries": [
+				"Evil Nature Spirit exhales a powerful gale of wind in a line that is 30-foot long and 10 feet wide. Each creature in that line must make a {@dc 13} Strength saving throw, taking 10 ({@damage 3d6}) bludgeoning damage on a failed save, or half as much damage on a successful one. Creatures that fail their saving throw are blown up to 15 feet away from Evil Nature Spirit in the direction of the line and land {@condition prone}.",
+				"nbsp;&nbsp;The gust disperses gas or vapor, and it extinguishes candles, torches, and similar unprotected flames in the area. It causes protected flames, such as those of lanterns, to dance wildly and has a 50 percent chance to extinguish them."
+			]
+		}
+	],
+	"traitTags": [
+		"Immutable Form",
+		"Regeneration"
+	],
+	"senseTags": [
+		"D"
+	],
+	"actionTags": [
+		"Multiattack"
+	],
+	"languageTags": [
+		"C",
+		"S"
+	],
+	"damageTags": [
+		"B"
+	],
+	"miscTags": [
+		"AOE",
+		"MW"
+	]
+},
+
 		{
 	"name": "Vine Blight",
 	"source": "",
