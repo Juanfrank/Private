@@ -1,6 +1,86 @@
 {
 	"monster": [
 		{
+	"name": "Vine Blight",
+	"source": "",
+	"page": 0,
+	"size": "M",
+	"type": "plant",
+	"alignment": [
+		"U"
+	],
+	"ac": [
+		12
+	],
+	"hp": {
+		"average": 6,
+		"formula": "1d8 + 2"
+	},
+	"speed": {
+		"walk": 10
+	},
+	"str": 15,
+	"dex": 8,
+	"con": 14,
+	"int": 5,
+	"wis": 10,
+	"cha": 3,
+	"skill": {
+		"stealth": "+1"
+	},
+	"senses": [
+		"blindsight 60 ft."
+	],
+	"passive": 10,
+	"conditionImmune": [
+		"blinded",
+		"deafened"
+	],
+	"languages": [
+		"Common"
+	],
+	"cr": "1/2",
+	"action": [
+		{
+			"name": "Entangling Plants {@recharge 5}",
+			"entries": [
+				"Grasping roots and vines sprout in a 15-foot radius centered on the blight, withering away after 1 minute. For the duration, that area is difficult terrain for nonplant creatures. In addition, each creature of the blight's choice in that area when the plants appear must succeed on a {@dc 12} Strength saving throw or become {@condition restrained}. A creature can use its action to make a {@dc 12} Strength check, freeing it self or another entangled creature within reach on a success.",
+				"Restrained:",
+				"A {@condition restrained} creature's speed becomes 0, and it can't benefit from any bonus to its speed.",
+				"Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.",
+				"The creature has disadvantage on Dexterity saving throws."
+			]
+		},
+		{
+			"name": "Constrict",
+			"entries": [
+				"{@atk mw} {@hit 4} to hit, reach 10 ft., one target. {@h}9 ({@damage 2d6 + 2}) bludgeoning damage, and a Large or smaller target is {@condition grappled} (escape {@dc 12}) . Until this grapple ends, the target is {@condition restrained}, and the blight can't constrict another target.",
+				"Grappled:",
+				"A {@condition grappled} creature's speed becomes 0, and it can't benefit from any bonus to its speed."
+			]
+		}
+	],
+	"senseTags": [
+		"B"
+	],
+	"languageTags": [
+		"C"
+	],
+	"damageTags": [
+		"B"
+	],
+	"miscTags": [
+		"AOE",
+		"MW",
+		"RCH"
+	],
+	"conditionInflict": [
+		"grappled",
+		"restrained"
+	]
+},
+
+		{
 			"name": "Goblin Slayer",
 			"source": "",
 			"page": 0,
