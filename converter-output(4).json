@@ -1,5 +1,71 @@
 {
 	"monster": [
+		{
+	"name": "Corrupted Tree Monster",
+	"source": "",
+	"page": 0,
+	"size": "M",
+	"type": "elemental",
+	"alignment": [
+		"C",
+		"E"
+	],
+	"ac": [
+		{
+			"ac": 15,
+			"from": [
+				"natural armor"
+			]
+		}
+	],
+	"hp": {
+		"average": 26,
+		"formula": "4d10 + 4"
+	},
+	"speed": {
+		"walk": 30
+	},
+	"str": 16,
+	"dex": 14,
+	"con": 13,
+	"int": 10,
+	"wis": 12,
+	"cha": 10,
+	"save": {
+		"dex": "+5",
+		"con": "+4"
+	},
+	"skill": {
+		"perception": "+4"
+	},
+	"passive": 14,
+	"vulnerable": [
+		"fire"
+	],
+	"languages": [
+		"Primordial",
+		"but can't talk"
+	],
+	"cr": "1",
+	"action": [
+		{
+			"name": "Stab",
+			"entries": [
+				"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) piercing damage."
+			]
+		}
+	],
+	"languageTags": [
+		"P"
+	],
+	"damageTags": [
+		"P"
+	],
+	"miscTags": [
+		"MW"
+	]
+},
+
 	{
 	"name": "Corrupt Druid",
 	"source": "",
