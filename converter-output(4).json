@@ -28,7 +28,8 @@
 	"senses": [
 		"darkvision 60 ft."
 	],
-	"passive": null,
+	"passive": 11,
+	"cr": "1/4",
 	"trait": [
 		{
 			"name": "Keen Sight and Smell",
