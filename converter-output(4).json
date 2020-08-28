@@ -1,6 +1,79 @@
 {
 	"monster": [
 		{
+	"name": "Owlbear Cublet",
+	"source": "",
+	"page": 0,
+	"size": "T",
+	"type": "monstrosity",
+	"alignment": [
+		"U"
+	],
+	"ac": [
+		13
+	],
+	"hp": {
+		"average": 17,
+		"formula": "5d4 + 5"
+	},
+	"speed": {
+		"walk": 25
+	},
+	"str": 12,
+	"dex": 16,
+	"con": 13,
+	"int": 3,
+	"wis": 12,
+	"cha": 4,
+	"senses": [
+		"darkvision 60 ft."
+	],
+	"passive": null,
+	"trait": [
+		{
+			"name": "Keen Sight and Smell",
+			"entries": [
+				"The owlbear has advantage on Wisdom (Perception) checks that rely on sight or smell."
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Beak",
+			"entries": [
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage."
+			]
+		},
+		{
+			"name": "Claws",
+			"entries": [
+				"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage."
+			]
+		}
+	],
+	"reaction": [
+		{
+			"name": "Training",
+			"entries": [
+				"When the owlbear sees its mama make an attack, the ownbear makes one beak attack against the same target."
+			]
+		}
+	],
+	"traitTags": [
+		"Keen Senses"
+	],
+	"senseTags": [
+		"D"
+	],
+	"damageTags": [
+		"P",
+		"S"
+	],
+	"miscTags": [
+		"MW"
+	]
+},
+		{
 	"name": "Corrupted Tree Monster",
 	"source": "",
 	"page": 0,
