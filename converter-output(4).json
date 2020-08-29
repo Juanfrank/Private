@@ -1,5 +1,108 @@
 {
 	"monster": [
+	{
+	"name": "Hobgoblin Bruiser",
+	"source": "",
+	"page": 0,
+	"size": "M",
+	"type": {
+		"type": "humanoid",
+		"tags": [
+			"goblinoid"
+		]
+	},
+	"alignment": [
+		"C",
+		"E"
+	],
+	"ac": [
+		{
+			"ac": 15,
+			"from": [
+				"{@item chain shirt|phb}"
+			]
+		}
+	],
+	"hp": {
+		"average": 26,
+		"formula": "4d8 + 9"
+	},
+	"speed": {
+		"walk": 30
+	},
+	"str": 14,
+	"dex": 14,
+	"con": 16,
+	"int": 8,
+	"wis": 12,
+	"cha": 10,
+	"skill": {
+		"intimidation": "+2",
+		"athletics": "+4"
+	},
+	"passive": 11,
+	"resist": [
+		{
+			"resist": [
+				"bludgeoning"
+			],
+			"note": "from nonmagical weapons"
+		}
+	],
+	"languages": [
+		"Goblin"
+	],
+	"cr": "1",
+	"trait": [
+		{
+			"name": "Grappler",
+			"entries": [
+				"The bully has advantage on attack rolls against any creature {@condition grappled} by it."
+			]
+		},
+		{
+			"name": "Martial Advantage (Hobgoblin)",
+			"entries": [
+				"Once per turn, the hobgoblin bruiser can deal an extra 6 ({@damage 2d6}) damage to a creature it hits with a weapon attack if that creature is within 5 feet of an ally of the hobgoblin bruiser that isn't {@condition incapacitated}."
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Multiattack",
+			"entries": [
+				"The bully can make two weapon attacks, or it can make one weapon attack and use Demoralize once."
+			]
+		},
+		{
+			"name": "Iron Knuckles",
+			"entries": [
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one creature. {@h}5 ({@damage 1d6 + 2}) bludgeoning damage. If the attack hits the target, the bully can attempt to grapple it as a bonus action."
+			]
+		},
+		{
+			"name": "Demoralize",
+			"entries": [
+				"As an action, the bully can attempt to demoralize a target in line of sight within 30ft. The target must make a {@dc 12} Wisdom saving throw or be {@condition frightened} for 1 minute. The target can make another saving throw at the end of each of its turns to end this effect."
+			]
+		}
+	],
+	"actionTags": [
+		"Multiattack"
+	],
+	"languageTags": [
+		"GO"
+	],
+	"damageTags": [
+		"B"
+	],
+	"miscTags": [
+		"MW"
+	],
+	"conditionInflict": [
+		"frightened"
+	]
+},
 		{
 	"name": "Owlbear Cublet",
 	"source": "",
