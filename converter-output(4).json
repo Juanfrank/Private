@@ -50,6 +50,7 @@
 		}
 	],
 	"languages": [
+		"Common",
 		"Goblin"
 	],
 	"cr": "1",
@@ -91,6 +92,7 @@
 		"Multiattack"
 	],
 	"languageTags": [
+		"C",
 		"GO"
 	],
 	"damageTags": [
