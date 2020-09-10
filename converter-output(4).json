@@ -1,6 +1,109 @@
 {
 	"monster": [
-	{
+		{
+	"name": "Hobgoblin Ranged Striker",
+	"source": "",
+	"page": 0,
+	"size": "M",
+	"type": {
+		"type": "humanoid",
+		"tags": [
+			"goblinoid"
+		]
+	},
+	"alignment": [
+		"L",
+		"E"
+	],
+	"ac": [
+		{
+			"ac": 15,
+			"from": [
+				"{@item chain shirt|phb}"
+			]
+		}
+	],
+	"hp": {
+		"average": 26,
+		"formula": "4d8 + 8"
+	},
+	"speed": {
+		"walk": 30
+	},
+	"str": 13,
+	"dex": 14,
+	"con": 14,
+	"int": 10,
+	"wis": 10,
+	"cha": 9,
+	"save": {
+		"dex": "+4"
+	},
+	"skill": {
+		"perception": "+2"
+	},
+	"senses": [
+		"darkvision 60ft."
+	],
+	"passive": 12,
+	"languages": [
+		"Common",
+		"Goblin"
+	],
+	"cr": "1",
+	"trait": [
+		{
+			"name": "Precision Attack (2/Short Rest)",
+			"entries": [
+				"Once per turn, when the hobgoblin ranged striker makes an attack roll with the longbow against a creature, it can add {@dice 1d6} to the roll after making the attack."
+			]
+		},
+		{
+			"name": "Martial Advantage",
+			"entries": [
+				"Once per turn, the hobgoblin ranged striker can deal an extra 7 ({@damage 2d6}) damage to a creature it hits with a weapon attack if that creature is within 5 feet of an ally of the hobgoblin ranged striker that isn't {@condition incapacitated}."
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Longbow",
+			"entries": [
+				"{@atk rw} {@hit 4} to hit, range 150/600 ft., one creature. {@h}6 ({@damage 1d8 + 2}) piercing damage."
+			]
+		},
+		{
+			"name": "Shortsword",
+			"entries": [
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one creature. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+			]
+		}
+	],
+	"reaction": [
+		{
+			"name": "Evasive Footwork",
+			"entries": [
+				"When the hobgoblin ranged striker is attacked by an attack of opportunity caused by its movement, it can add {@dice 1d6} to its AC until it stops moving."
+			]
+		}
+	],
+	"senseTags": [
+		"D"
+	],
+	"languageTags": [
+		"C",
+		"GO"
+	],
+	"damageTags": [
+		"P"
+	],
+	"miscTags": [
+		"MW",
+		"RNG",
+		"RW"
+	]
+},
+{
 	"name": "Hobgoblin Warpriest",
 	"source": "",
 	"page": 0,
