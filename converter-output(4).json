@@ -1,6 +1,259 @@
 {
 	"monster": [
 	{
+	"name": "Hobgoblin Warpriest",
+	"source": "",
+	"page": 0,
+	"size": "M",
+	"type": {
+		"type": "humanoid",
+		"tags": [
+			"goblinoid"
+		]
+	},
+	"alignment": [
+		"L",
+		"E"
+	],
+	"ac": [
+		{
+			"ac": 19,
+			"from": [
+				"{@item half plate armor|PHB|half plate}",
+				"{@item shield|PHB}"
+			]
+		}
+	],
+	"hp": {
+		"average": 39,
+		"formula": "6d8 + 12"
+	},
+	"speed": {
+		"walk": 30
+	},
+	"str": 13,
+	"dex": 14,
+	"con": 14,
+	"int": 10,
+	"wis": 14,
+	"cha": 9,
+	"skill": {
+		"perception": "+4"
+	},
+	"senses": [
+		"darkvision 60ft."
+	],
+	"passive": 14,
+	"languages": [
+		"Common",
+		"Goblin"
+	],
+	"cr": "3",
+	"spellcasting": [
+		{
+			"name": "Spellcasting",
+			"headerEntries": [
+				"The hobgoblin warpriest is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 12}, {@hit 4} to hit with spell attacks). The hobgoblin warpriest has the following cleric spells prepared:"
+			],
+			"spells": {
+				"0": {
+					"spells": [
+						"{@spell spare the dying}",
+						"{@spell sacred flame}",
+						"{@spell guidance}",
+						"{@spell resistance}"
+					]
+				},
+				"1": {
+					"slots": 4,
+					"spells": [
+						"{@spell bless}",
+						"{@spell guiding bolt}",
+						"{@spell healing word}",
+						"{@spell shield of faith}"
+					]
+				},
+				"2": {
+					"slots": 3,
+					"spells": [
+						"{@spell spiritual weapon}"
+					]
+				},
+				"3": {
+					"slots": 2,
+					"spells": [
+						"{@spell spirit guardians}",
+						"{@spell mass healing word}"
+					]
+				}
+			},
+			"ability": "wis"
+		}
+	],
+	"trait": [
+		{
+			"name": "Martial Advantage (Hobgoblin)",
+			"entries": [
+				"Once per turn, the hobgoblin warpriest can deal an extra 10 ({@damage 3d6}) damage to a creature it hits with a weapon attack if that creature is within 5 feet of an ally of the hobgoblin warpriest that isn't {@condition incapacitated}."
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Morningstar",
+			"entries": [
+				"{@atk mw} {@hit 3} to hit, reach 5 ft., one creature. {@h}5 ({@damage 1d8 + 1}) piercing damage."
+			]
+		}
+	],
+	"reaction": [
+		{
+			"name": "Parry",
+			"entries": [
+				"The hobgoblin warpriest adds 2 to its AC against one melee attack that would hit it. To do so, the hobgoblin warpriest must see the attacker and be wielding a melee weapon."
+			]
+		}
+	],
+	"senseTags": [
+		"D"
+	],
+	"actionTags": [
+		"Parry"
+	],
+	"languageTags": [
+		"C",
+		"GO"
+	],
+	"damageTags": [
+		"P"
+	],
+	"spellcastingTags": [
+		"CC"
+	],
+	"miscTags": [
+		"MW"
+	]
+}
+,
+{
+	"name": "Hobgoblin War Acolyte",
+	"source": "",
+	"page": 0,
+	"size": "M",
+	"type": {
+		"type": "humanoid",
+		"tags": [
+			"goblinoid"
+		]
+	},
+	"alignment": [
+		"L",
+		"E"
+	],
+	"ac": [
+		{
+			"ac": 18,
+			"from": [
+				"{@item chain mail|PHB}",
+				"{@item shield|PHB}"
+			]
+		}
+	],
+	"hp": {
+		"average": 22,
+		"formula": "4d8 + 4"
+	},
+	"speed": {
+		"walk": 30
+	},
+	"str": 13,
+	"dex": 12,
+	"con": 12,
+	"int": 10,
+	"wis": 14,
+	"cha": 9,
+	"save": {
+		"wis": "+4"
+	},
+	"skill": {
+		"perception": "+4"
+	},
+	"senses": [
+		"darkvision 60ft."
+	],
+	"passive": 14,
+	"languages": [
+		"Common",
+		"Goblin"
+	],
+	"cr": "1",
+	"spellcasting": [
+		{
+			"name": "Spellcasting",
+			"headerEntries": [
+				"The hobgoblin war acolyte is a 3rd-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 12}, {@hit 4} to hit with spell attacks). The hobgoblin war acolyte has the following cleric spells prepared:"
+			],
+			"spells": {
+				"0": {
+					"spells": [
+						"{@spell spare the dying}",
+						"{@spell sacred flame}",
+						"{@spell guidance}"
+					]
+				},
+				"1": {
+					"slots": 4,
+					"spells": [
+						"{@spell bless}",
+						"{@spell guiding bolt}",
+						"{@spell healing word}",
+						"{@spell shield of faith}"
+					]
+				},
+				"2": {
+					"slots": 2,
+					"spells": [
+						"{@spell spiritual weapon}"
+					]
+				}
+			},
+			"ability": "wis"
+		}
+	],
+	"trait": [
+		{
+			"name": "Martial Advantage",
+			"entries": [
+				"Once per turn, the hobgoblin war acolyte can deal an extra 7 ({@damage 2d6}) damage to a creature it hits with a weapon attack if that creature is within 5 feet of an ally of the hobgoblin war acolyte that isn't {@condition incapacitated}."
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Morningstar",
+			"entries": [
+				"{@atk mw} {@hit 3} to hit, reach 5 ft., one creature. {@h}5 ({@damage 1d8 + 1}) piercing damage."
+			]
+		}
+	],
+	"senseTags": [
+		"D"
+	],
+	"languageTags": [
+		"C",
+		"GO"
+	],
+	"damageTags": [
+		"P"
+	],
+	"spellcastingTags": [
+		"CC"
+	],
+	"miscTags": [
+		"MW"
+	]
+},
+{
 	"name": "Hobgoblin Bruiser",
 	"source": "",
 	"page": 0,
