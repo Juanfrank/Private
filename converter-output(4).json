@@ -1,5 +1,132 @@
 {
 	"monster": [
+	{
+	"name": "Goblin Arcane Duelist",
+	"source": "",
+	"page": 0,
+	"size": "S",
+	"type": {
+		"type": "humanoid",
+		"tags": [
+			"goblinoid"
+		]
+	},
+	"alignment": [
+		"N",
+		"E"
+	],
+	"ac": [
+		12,
+		{
+			"ac": 15,
+			"condition": "with {@spell mage armor}",
+			"braces": true
+		}
+	],
+	"hp": {
+		"average": 27,
+		"formula": "6d6 + 6"
+	},
+	"speed": {
+		"walk": 30
+	},
+	"str": 8,
+	"dex": 14,
+	"con": 12,
+	"int": 14,
+	"wis": 8,
+	"cha": 8,
+	"save": {
+		"con": "+3"
+	},
+	"skill": {
+		"acrobatics": "+4",
+		"stealth": "+4"
+	},
+	"senses": [
+		"darkvision 60ft."
+	],
+	"passive": 9,
+	"languages": [
+		"Common",
+		"Goblin"
+	],
+	"cr": "1",
+	"spellcasting": [
+		{
+			"name": "Spellcasting",
+			"headerEntries": [
+				"The goblin arcane duelist is a 3rd-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 12}, {@hit 4} to hit with spell attacks). The goblin arcane duelist has the following wizard spells prepared:"
+			],
+			"spells": {
+				"0": {
+					"spells": [
+						"{@spell shocking grasp}",
+						"{@spell fire bolt}"
+					]
+				},
+				"1": {
+					"slots": 4,
+					"spells": [
+						"{@spell mage armor}",
+						"{@spell shield}",
+						"{@spell ice knife|XGE}"
+					]
+				},
+				"2": {
+					"slots": 2,
+					"spells": [
+						"{@spell mirror image}",
+						"{@spell hold person}"
+					]
+				}
+			},
+			"ability": "int"
+		}
+	],
+	"trait": [
+		{
+			"name": "Nimble Escape",
+			"entries": [
+				"The goblin arcane duelist can take the Disengage or Hide action as a bonus action on each of its turns."
+			]
+		},
+		{
+			"name": "Martial Focus",
+			"entries": [
+				"Goblin arcane duelists are trained in melee spellcasting, and can use a weapon as an arcane focus."
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Scimitar",
+			"entries": [
+				"{@atk mw} {@hit 4} to hit, reach 5 ft., one creature. {@h}5 ({@damage 1d6 + 2}) slashing damage."
+			]
+		}
+	],
+	"senseTags": [
+		"D"
+	],
+	"languageTags": [
+		"C",
+		"GO"
+	],
+	"damageTags": [
+		"S"
+	],
+	"spellcastingTags": [
+		"CW"
+	],
+	"miscTags": [
+		"MW"
+	],
+	"conditionInflictSpell": [
+		"paralyzed"
+	]
+},
+
 		{
 	"name": "Hobgoblin Ranged Striker",
 	"source": "",
